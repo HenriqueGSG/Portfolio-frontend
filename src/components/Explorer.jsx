@@ -1,7 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { VscChevronRight, VscChevronDown, VscEllipsis } from "react-icons/vsc";
-import { DropDownBtn } from "./index";
 import { FaReact } from "react-icons/fa";
 
 const Explorer = () => {
@@ -41,6 +40,14 @@ const Explorer = () => {
                   nameProject: "DashEdu",
                   tech: "Django, Tailwind, Synfuntion, ",
                   hosting: "Netifly, Railway",
+                  techObject: [
+                    "React",
+                    "Tailwind",
+                    "Netlify",
+                    "Railway",
+                    "Django",
+                    "SyncFusion",
+                  ],
                 },
               }}
             >
@@ -58,6 +65,15 @@ const Explorer = () => {
                   nameProject: "DepInfo",
                   tech: "Django, Tailwind, Chartjs",
                   hosting: "Netifly, Railway",
+                  techObject: [
+                    "Vite",
+                    "React",
+                    "Tailwind",
+                    "Netlify",
+                    "Railway",
+                    "Django",
+                    "Chartjs",
+                  ],
                 },
               }}
             >
@@ -75,6 +91,13 @@ const Explorer = () => {
                   nameProject: "Yoututo",
                   tech: "Firebase, Bootstrap",
                   hosting: "Stackblitz",
+                  techObject: [
+                    "React",
+                    "Netlify",
+                    "BootStrap",
+                    "StackBlitz",
+                    "Firebase",
+                  ],
                 },
               }}
             >
@@ -92,12 +115,38 @@ const Explorer = () => {
                   nameProject: "FiscalizaCandi",
                   tech: "Bootstrap",
                   hosting: "Stackblitz",
+                  techObject: ["React", "StackBlitz"],
                 },
               }}
             >
               <div className="flex items-center pl-5 gap-x-2 ">
                 <FaReact className="w-4 h-4  " style={{ color: "#3d7699" }} />
                 FiscalizaCandi.jsx
+              </div>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+              to={{ pathname: "/projects/fromUsersVote" }}
+              state={{
+                data: {
+                  urlProject: "https://fromusersvote.netlify.app",
+                  nameProject: "FromUsersVote",
+                  tech: "Tailwind, React, Django, ",
+                  hosting: "Netifly",
+                  techObject: [
+                    "Vite",
+                    "React",
+                    "Tailwind",
+                    "Netlify",
+                    "Django",
+                    "Firebase",
+                  ],
+                },
+              }}
+            >
+              <div className="flex items-center pl-5 gap-x-2 ">
+                <FaReact className="w-4 h-4  " style={{ color: "#3d7699" }} />
+                FromUsersVote.jsx
               </div>
             </NavLink>
           </div>

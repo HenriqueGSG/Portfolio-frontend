@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { VscChevronRight } from "react-icons/vsc";
 import { FaReact } from "react-icons/fa";
+import { SkillProject } from "../components/index";
 
 const Projects = () => {
   const location = useLocation();
@@ -81,14 +82,19 @@ const Projects = () => {
           </span>
         </div>
       </div>
-      <div className="w-full h-full px-10">
-        <iframe
-          className="my-5"
-          src={state.data.urlProject}
-          height="800px"
-          width="100%"
-          title="description"
-        ></iframe>
+      <div className="flex flex-col pt-10">
+        {state.data.techObject && (
+          <SkillProject techs={state.data.techObject} />
+        )}
+        <div className="w-full h-full ">
+          <iframe
+            className=""
+            src={state.data.urlProject}
+            height="800px"
+            width="100%"
+            title="description"
+          ></iframe>
+        </div>
       </div>
       <div className="pl-5">
         <span className=" text-vs-code-text-pink text-lg">{")"}</span>

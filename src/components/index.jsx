@@ -6,3 +6,5 @@ export { default as Explorer } from "./Explorer";
 export { default as NavOpenFiles } from "./NavOpenFiles";
 export { default as DropDownBtn } from "./DropDownBtn";
 export { default as Skills } from "./Skills";
+export { default as SkillPoint } from "./SkillPoint";
+export { default as SkillProject } from "./SkillProject";

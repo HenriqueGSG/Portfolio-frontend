@@ -8,12 +8,12 @@ const NavOpenFiles = () => {
   const normalLink =
     "   text-grey-700 text-white hover:bg-main-hover-link h-full  flex  items-center";
   return (
-    <div className="w-full h-10 bg-vs-code-nav-files-top flex  items-center">
+    <div className="flex items-center w-full h-10 bg-vs-code-nav-files-top">
       <NavLink
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
         to="/"
       >
-        <div className="  px-3 flex ">Home.jsx</div>
+        <div className="flex px-3 ">Home.jsx</div>
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -23,10 +23,18 @@ const NavOpenFiles = () => {
             urlProject: "https://flourishing-kheer-941a41.netlify.app",
             nameProject: "DepInfo",
             tech: "Django, Tailwind, Chartjs",
+            techObject: [
+              "React",
+              "Tailwind",
+              "Netlify",
+              "Railway",
+              "Django",
+              "SyncFusion",
+            ],
           },
         }}
       >
-        <div className="  px-3 flex ">DepInfo</div>
+        <div className="flex px-3 ">DepInfo</div>
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -36,10 +44,19 @@ const NavOpenFiles = () => {
             urlProject: "https://dashedu.netlify.app",
             nameProject: "DashEdu",
             tech: "Django, Tailwind, Synfuntion, ",
+            techObject: [
+              "Vite",
+              "React",
+              "Tailwind",
+              "Netlify",
+              "Railway",
+              "Django",
+              "Chartjs",
+            ],
           },
         }}
       >
-        <div className="  px-3 flex ">DashEdu</div>
+        <div className="flex px-3 ">DashEdu</div>
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -49,10 +66,17 @@ const NavOpenFiles = () => {
             urlProject: "https://react-in2elr.stackblitz.io",
             nameProject: "Yoututo",
             tech: "Firebase, Bootstrap",
+            techObject: [
+              "React",
+              "Netlify",
+              "BootStrap",
+              "StackBlitz",
+              "Firebase",
+            ],
           },
         }}
       >
-        <div className="  px-3 flex ">Yoututo</div>
+        <div className="flex px-3 ">Yoututo</div>
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -62,10 +86,11 @@ const NavOpenFiles = () => {
             urlProject: "https://react-ndvwma.stackblitz.io",
             nameProject: "Yoututo",
             tech: "Firebase, Bootstrap",
+            techObject: ["React", "StackBlitz"],
           },
         }}
       >
-        <div className="  px-3 flex ">FiscalizaCand</div>
+        <div className="flex px-3 ">FiscalizaCand</div>
       </NavLink>
     </div>
   );
