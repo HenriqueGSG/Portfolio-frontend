@@ -25,7 +25,7 @@ function App() {
           <div className=" w-full h-auto bg-main-bg ">
             <NavOpenFiles />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/Portfolio-frontend" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:projectName" element={<Projects />} />
               <Route path="/about" element={<About />} />
